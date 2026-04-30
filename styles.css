@@ -1,0 +1,479 @@
+/*  Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Login */
+.login-body {
+    background-color: #1a1a2e;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 24px rgba(206, 54, 54, 0.3);
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #e94560;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.login-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #7b6bce;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #c73652;
+}
+
+.error-msg {
+    color: #e94560;
+    font-size: 0.9rem;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+
+
+/*  Navbar */
+
+.logo-navbar {
+    height: 98px;   /* controla el tamaño real */
+    width: 70%;
+    object-fit: contain;
+}
+
+.navbar-toggler{
+    color: #0d0d31;
+    background-color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+#navbar-principal {
+    background-color: #1a1a2e;
+    padding: 16px 32px;
+    height: 70px;
+}
+#navbar-principal .container-fluid {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navbar-principal .nav-link {
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    padding: 6px 14px;
+    border: 1px solid #e94560;
+    border-radius: 6px;
+    margin-left: 8px;
+    transition: all 0.3s;
+}
+
+#navbar-principal .nav-link:hover {
+    background-color: #e94560;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background-color: #16213e;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 5px 8px rgba(214, 12, 12, 0.815);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    color: #e94560;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+/* ===== FEED DE EVENTOS ===== */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    color: #1a1a2e;
+}
+
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Aplica a todas las imágenes dentro del carrusel */
+/* Sombra al título y párrafo dentro del carrusel */
+.hero h2 {
+  text-shadow: 1px 3px 3px rgb(133, 7, 55);
+}
+
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  color: #e94560;
+  text-shadow: 2px 2px 15px rgba(245, 239, 239, 0.877); /* sombra para que se lea sobre la foto */
+  left: -160px;
+  top: -180px;
+  background-color: #181717e0;
+  width: 100%;
+  border: 1px solid #e945606c;
+}
+
+
+
+.carousel-inner img {
+  width: 100%;        /* ocupa todo el ancho del contenedor */
+  height: 300px;      /* altura fija para todas las imágenes */
+  object-fit: cover;  /* recorta la imagen manteniendo proporción */
+   
+   border: 1px solid rgba(255, 0, 0, 0.103);
+}
+.hero h2 {
+  position: relative;
+  margin-left: 2rem; /* mueve el título 20px hacia la izquierda */
+  margin-top: -5rem;
+}
+.hero p {
+  position: relative;
+  margin-left: 10rem; /* mueve el título 20px hacia la izquierda */
+}
+
+
+/*  Tarjetas */
+article {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-4px);
+}
+
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+article h4 {
+    padding: 16px 16px 4px;
+    font-size: 1.1rem;
+    color: #1a1a2e;
+}
+
+article p {
+    padding: 4px 16px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+article a {
+    display: inline-block;
+    margin: 12px 16px 16px;
+    padding: 8px 16px;
+    background-color: #e94560;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+article a:hover {
+    background-color: #c73652;
+}
+
+
+/* ===== PERFIL ===== */
+.perfil-header {
+    background-color: #16213e;
+    color: white;
+}
+
+.perfil-header p {
+    color: #aaa;
+}
+
+.perfil-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #e94560;
+    object-fit: cover;
+    align-items: center;
+    
+}
+
+/* ===== ESTADÍSTICAS ===== */
+.stat-card {
+    background-color: #8128283d;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-card strong {
+    font-size: 2rem;
+    color: #e94560;
+    display: block;
+}
+
+.stat-card p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.pagination .page-link {
+  color: #04073b; /* cambia el color del texto */
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: #aaa;
+    text-align: center;
+    padding: 24px;
+    margin-top: 60px;
+    box-shadow: 0 8px 24px rgba(206, 54, 54, 0.3);
+}
+
+
+/*publicaciones*/
+.story-info{
+    background-color: rgba(3, 0, 19, 0.788);
+    text-align: center;
+}
+
+.container-publicaciones{
+    padding: 2rem;
+    background-color: #1a1a2e96;
+    border-radius: 1%;
+    
+    
+}
+
+.container-publicaciones .card-body h3{
+    background-color: #1a1a2ee7;
+    color: white;
+    padding: 10px;
+    border: 1px solid #e94560;
+    
+    
+}
+.container-publicaciones .card-body p{
+    background-color: #1a1a2e31;
+    width: 90%;
+    margin-left: 1.5rem;
+    border: 1px solid #1a1a2e31;
+      
+}
+
+/* mejora el btn-like */
+.btn-like {
+    background-color: #e945605e;
+    border: 2px solid #e7dbddcc;
+    color: #180000;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-like:hover {
+    background-color: #e94560;
+    color: white;
+}
+
+/* estilo para el input de comentario */
+.input-comentario {
+    width: 70%;
+    padding: 6px 10px;
+    border: 1px solid #e94560;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+/* estilo para el botón agregar comentario */
+.btn-comentario {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-comentario:hover {
+    background-color: #c73652;
+}
+
+
+/* ===== STORIES ===== */
+.stories-container {
+    background-color: #1a1a2e;
+    padding: 16px 40px;
+    border-bottom: 1px solid #e94560;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stories-scroll {
+    display: flex;
+    gap: 19px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+    margin-left: 0;
+}
+
+.stories-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.story-card {
+    position: relative;
+    min-width: 120px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    flex-shrink: 0;
+    border: 3px solid #e94560;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.story-card:hover {
+    transform: scale(1.05);
+}
+
+.story-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e94560;
+}
+
+.story-info {
+    margin-top: auto;
+}
+
+.story-nombre {
+    color: white;
+    font-size: 0.75rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.story-evento {
+    color: #e94560;
+    font-size: 0.7rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.story-arrow {
+    display: none; /* oculto en pantalla grande */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e945602c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.story-arrow-left { left: 8px; }
+.story-arrow-right { right: 8px; }
+
+/* solo aparecen en móvil */
+@media (max-width: 1981px) {
+    .story-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .stories-container {
+        position: relative;
+        
+    }
+}

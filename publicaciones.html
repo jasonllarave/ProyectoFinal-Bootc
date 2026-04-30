@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>PulsoScena - Eventos</title>
+</head>
+<body>
+
+    <!-- Navbar con hamburguesa -->
+    <nav class="navbar navbar-expand-lg" id="navbar-principal">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+             <img src="assets/logo.png" class="logo-navbar" alt="logo">
+            </a>
+            <button class="navbar-toggler " type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publicaciones.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Mi Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Historias Destacadas -->
+ <h1 class="text-center mb-3">Tu comunidad</h1>
+   <div class="stories-container">
+
+   
+
+    <button class="story-arrow story-arrow-left" id="arrowLeft">&#8249;</button>
+
+    <div class="stories-scroll" id="storiesScroll">
+
+        <div class="story-card" style="background-image: url('assets/eventos/1.jpg'); background-size: cover; background-position: center;">
+            <img src="assets/perfiles/2.jpg" class="story-avatar" alt="usuario">
+            <div class="story-info">
+                <p class="story-nombre">María García</p>
+                <p class="story-evento"> Jazz en el Parque</p>
+            </div>
+        </div>
+
+        <div class="story-card" style="background-image: url('assets/eventos/2.jpg'); background-size: cover; background-position: center;">
+            <img src="assets/perfiles/1.jpg" class="story-avatar" alt="usuario">
+            <div class="story-info">
+                <p class="story-nombre">Carlos Ruiz</p>
+                <p class="story-evento"> Arte Moderno</p>
+            </div>
+        </div>
+
+        <div class="story-card" style="background-image: url('assets/eventos/3.jpg'); background-size: cover; background-position: center;">
+            <img src="assets/perfiles/3.jpeg" class="story-avatar" alt="usuario">
+            <div class="story-info">
+                <p class="story-nombre">Laura Pérez</p>
+                <p class="story-evento"> Festival Teatro</p>
+            </div>
+        </div>
+
+        <div class="story-card" style="background-image: url('assets/eventos/4.jpg'); background-size: cover; background-position: center;">
+            <img src="assets/perfiles/4.avif" class="story-avatar" alt="usuario">
+            <div class="story-info">
+                <p class="story-nombre">Pedro López</p>
+                <p class="story-evento"> Música Electrónica</p>
+            </div>
+        </div>
+
+        <div class="story-card" style="background-image: url('assets/eventos/5.jpg'); background-size: cover; background-position: center;">
+            <img src="assets/perfiles/5.jpg" class="story-avatar" alt="usuario">
+            <div class="story-info">
+                <p class="story-nombre">Ana Torres</p>
+                <p class="story-evento"> Exposición Arte</p>
+            </div>
+        </div>
+
+        <div class="story-card" style="background-image: url('assets/eventos/6.png'); background-size: cover; background-position: center;">
+            <img src="assets/perfiles/6.jpg" class="story-avatar" alt="usuario">
+            <div class="story-info">
+                <p class="story-nombre">Estella Mora</p>
+                <p class="story-evento"> Rock Festival</p>
+            </div>
+        </div>
+
+        <div class="story-card" style="background-image: url('assets/eventos/7.png'); background-size: cover; background-position: center;">
+            <img src="assets/perfiles/7.avif" class="story-avatar" alt="usuario">
+            <div class="story-info">
+                <p class="story-nombre">Robert Reyes</p>
+                <p class="story-evento"> Cine al Aire</p>
+            </div>
+        </div>
+
+        <div class="story-card" style="background-image: url('assets/eventos/8.jpg'); background-size: cover; background-position: center;">
+            <img src="assets/perfiles/8.avif" class="story-avatar" alt="usuario">
+            <div class="story-info">
+                <p class="story-nombre">Dakota Vay</p>
+                <p class="story-evento"> Museo Noche</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="story-arrow story-arrow-right" id="arrowRight">&#8250;</button>
+
+</div>
+
+    <main>
+    <h2 class="text-center mb-5">Eventos Culturales</h2>
+
+    <div class="text-center mb-5">
+        <button class="btn btn-outline-danger me-2" 
+            data-bs-toggle="popover" 
+            data-bs-placement="top"
+            data-bs-title="Categorías"
+            data-bs-content="Conciertos | Teatro | Exposiciones | Festivales">
+            Categorías
+        </button>
+        <button class="btn btn-outline-danger me-2"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-title="Ciudades"
+            data-bs-content="Bogotá | Medellín | Cali | Cartagena">
+            Ciudades
+        </button>
+        <button class="btn btn-outline-danger me-2"
+            data-bs-toggle="popover"
+            data-bs-placement="left"
+            data-bs-title="Fecha"
+            data-bs-content="Esta semana | Este mes | Próximos eventos">
+            Fecha
+        </button>
+        <button class="btn btn-outline-danger"
+            data-bs-toggle="popover"
+            data-bs-placement="right"
+            data-bs-title="Precio"
+            data-bs-content="Gratis | Menos de $50k | Más de $50k">
+            Precio
+        </button>
+    </div>
+
+    <div class="container-publicaciones">
+        <div class="container text-center">
+            <div class="row row-cols-2">
+
+                <div class="col">
+                    <!-- Tarjeta 1 -->
+                    <div class="card mb-3" id="evento1">
+                        <img src="assets/arte.jpeg" alt="Concierto Jazz">
+                        <div class="card-body">
+                            <h3>Exposición Colectiva: Voces del Color</h3>
+                            <p class="card-text">Bogotá | 30 Abril 2026</p>
+                            <p class="card-text"><small class="text-body-secondary"> Una noche única donde doce artistas emergentes 
+                    presentan sus obras inspiradas en la diversidad cultural colombiana. 
+                    Habrá música en vivo, vino de cortesía y visita guiada por los artistas. 
+                    No te lo puedes perder.</small></p>
+                    <p> <strong>Hora:</strong> 6:00 PM - 10:00 PM</p>
+                    <p> <strong>Fecha:</strong> 30 de Abril, 2026</p>
+                    <p> <strong>Lugar:</strong> Galería El Dorado, Chapinero, Bogotá</p>
+                    <p> <strong>Entrada:</strong> Libre</p>
+                            <div>
+                                <button class="btn-like" id="megusta-1">
+                                    <img src="assets/megusta.png" alt="Me gusta" width="23" height="23" class="me-1">
+                                    Me gusta <span class="contador">0</span>
+                                </button>
+                            </div>
+                            <section>
+                                <button class="btn btn-outline-secondary btn-sm mt-2"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#comentarios-1">
+                                     Ver comentarios
+                                </button>
+                                <div class="collapse mt-2" id="comentarios-1">
+                                    <div class="lista-comentarios"></div>
+                                    <div class="d-flex gap-2 mt-2">
+                                        <input type="text" class="input-comentario form-control form-control-sm" placeholder="Escribí un comentario..."/>
+                                        <button class="btn-comentario btn btn-danger btn-sm">Agregar</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- Tarjeta 2 -->
+                    <div class="card mb-3" id="evento2">
+                        <img src="assets/vivo.jpg" alt="Exposición Arte">
+                        <div class="card-body">
+                            <h3>Noche de Música en Vivo: El Gato Gris</h3>
+                            <p class="card-text">Bogotá | 2 Mayo 2026</p>
+                            <p class="card-text"><small class="text-body-secondary">Una noche cargada de jazz, blues y rock acústico 
+                             en el corazón histórico de Bogotá. Tres bandas locales se turnarán en el escenario 
+                              del mítico Gato Gris. Capacidad limitada, se recomienda llegar temprano. 
+                               Incluye una copa de bienvenida.</small></p>
+                                <p> <strong>Hora:</strong> 7:00 PM - 11:00 PM</p>
+                                 <p> <strong>Fecha:</strong> 2 de Mayo, 2026</p>
+                                 <p> <strong>Lugar:</strong> El Gato Gris, Calle 14 #2-35, La Candelaria, Bogotá</p>
+                                 <p> <strong>Entrada:</strong> $15.000 COP en puerta</p>
+                            <div>
+                                <button class="btn-like" id="megusta-2">
+                                    <img src="assets/megusta.png" alt="Me gusta" width="23" height="23" class="me-1">
+                                    Me gusta <span class="contador">0</span>
+                                </button>
+                            </div>
+                            <section>
+                                <button class="btn btn-outline-secondary btn-sm mt-2"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#comentarios-2">
+                                     Ver comentarios
+                                </button>
+                                <div class="collapse mt-2" id="comentarios-2">
+                                    <div class="lista-comentarios"></div>
+                                    <div class="d-flex gap-2 mt-2">
+                                        <input type="text" class="input-comentario form-control form-control-sm" placeholder="Escribí un comentario..."/>
+                                        <button class="btn-comentario btn btn-danger btn-sm">Agregar</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- Tarjeta 3 -->
+                    <div class="card mb-3" id="evento3">
+                        <img src="assets/teatro.jpg" alt="Festival Teatro">
+                        <div class="card-body">
+                            <h3>Teatro Hilos Mágicos</h3>
+                            <p class="card-text">Bogotá | 29 Marzo 2026</p>
+                            <p class="card-text"><small class="text-body-secondary">Una experiencia teatral llena de magia, 
+                              títeres y movimiento escénico que cautiva tanto a grandes como a pequeños. 
+                               Una puesta en escena única que combina la tradición del teatro con el arte de los hilos. 
+                               Cupos limitados, se recomienda reservar con anticipación.</small></p>
+                                  <p> <strong>Hora:</strong> 8:00 PM</p>
+                                  <p> <strong>Fecha:</strong> 29 de Marzo, 2026</p>
+                                  <p> <strong>Lugar:</strong> Teatro hilos magicos, Bogotá</p>
+                                  <p> <strong>Entrada:</strong> $50.000 COP</p>
+                            <div>
+                                <button class="btn-like" id="megusta-3">
+                                    <img src="assets/megusta.png" alt="Me gusta" width="23" height="23" class="me-1">
+                                    Me gusta <span class="contador">0</span>
+                                </button>
+                            </div>
+                            <section>
+                                <button class="btn btn-outline-secondary btn-sm mt-2"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#comentarios-3">
+                                     Ver comentarios
+                                </button>
+                                <div class="collapse mt-2" id="comentarios-3">
+                                    <div class="lista-comentarios"></div>
+                                    <div class="d-flex gap-2 mt-2">
+                                        <input type="text" class="input-comentario form-control form-control-sm" placeholder="Escribí un comentario..."/>
+                                        <button class="btn-comentario btn btn-danger btn-sm">Agregar</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- Tarjeta 4 -->
+                    <div class="card mb-3" id="evento4">
+                        <img src="assets/t.jpeg" alt="Festival Música">
+                        <div class="card-body">
+                            <h3>Festival Arte & Fantasía: Fractales en Escena</h3>
+                            <p class="card-text">Bogotá | 10 Mayo 2026</p>
+                            <p class="card-text"><small class="text-body-secondary">Una celebración donde el arte digital, 
+                                  el cosplay y la geometría sagrada se fusionan en un solo escenario. 
+                                  Artistas visuales, performers y entusiastas del disfraz se reúnen para 
+                                  explorar los límites entre la realidad y la imaginación. 
+                                  Habrá concurso de disfraces, instalaciones fractales y música electrónica en vivo.</small></p>
+                                   <p> <strong>Hora:</strong> 3:00 PM - 9:00 PM</p>
+                                   <p> <strong>Fecha:</strong> 10 de Mayo, 2026</p>
+                                   <p> <strong>Lugar:</strong> Parque El Virrey, Bogotá</p>
+                                   <p> <strong>Entrada:</strong> $25.000 COP</p>
+                            <div>
+                                <button class="btn-like" id="megusta-4">
+                                    <img src="assets/megusta.png" alt="Me gusta" width="23" height="23" class="me-1">
+                                    Me gusta <span class="contador">0</span>
+                                </button>
+                            </div>
+                            <section>
+                                <button class="btn btn-outline-secondary btn-sm mt-2"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#comentarios-4">
+                                     Ver comentarios
+                                </button>
+                                <div class="collapse mt-2" id="comentarios-4">
+                                    <div class="lista-comentarios"></div>
+                                    <div class="d-flex gap-2 mt-2">
+                                        <input type="text" class="input-comentario form-control form-control-sm" placeholder="Escribí un comentario..."/>
+                                        <button class="btn-comentario btn btn-danger btn-sm">Agregar</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+   <div >
+  <ul class="pagination pagination-sm justify-content-center mt-2 ">
+    <li class="page-item disabled mb-5 ">
+      <a class="page-link text-primary-emphasis">Anterior</a>
+    </li>
+    <li class="page-item "><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link text-primary-emphasis" href="#">SIguiente</a>
+    </li>
+  </ul>
+  </div>
+
+      
+    </main>
+
+    <footer>
+        <p>© 2026 PulsoScena — Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
