@@ -85,8 +85,8 @@ body {
 }
 
 .logo-login {
-    height: 100%;   
-    width: 100%;
+    max-height: 120px;   
+    max-width: 100%;
     object-fit: contain;
     filter: drop-shadow(0 4px 12px rgba(233, 69, 96, 0.5));
     transition: transform 0.3s;
@@ -97,7 +97,6 @@ body {
 .logo-login:hover {
     transform: scale(1.05);
 }
-
 
 
 /*  Navbar */
