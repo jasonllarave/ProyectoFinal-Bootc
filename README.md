@@ -45,3 +45,13 @@ Camilo Llarave — Bootcamp BIT Módulo 1
 ## Demo
 
 [Ver proyecto en vivo](https://jasonllarave.github.io/ProyectoFinal-Bootc/login.html)
+
+## Repositorio
+
+[Ver código en GitHub](https://github.com/jasonllarave/ProyectoFinal-Bootc)
+
+
+## Prototipo
+
+[Ver wireframe en Figma](https://www.figma.com/proto/I0y8IMyRkoajrv4IJYhtCC/PulsoScena?node-id=1-6&t=nDZZkyT0R9B8Jfg6-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A6&show-proto-sidebar=1)
+
