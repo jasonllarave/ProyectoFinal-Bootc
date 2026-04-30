@@ -84,12 +84,26 @@ body {
     margin-bottom: 0;
 }
 
+.logo-login {
+    height: 100%;   
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 12px rgba(233, 69, 96, 0.5));
+    transition: transform 0.3s;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.logo-login:hover {
+    transform: scale(1.05);
+}
+
 
 
 /*  Navbar */
 
 .logo-navbar {
-    height: 98px;   /* controla el tamaño real */
+    height: 98px;   
     width: 70%;
     object-fit: contain;
 }
