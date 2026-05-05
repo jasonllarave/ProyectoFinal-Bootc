@@ -39,6 +39,55 @@ if (btnLogin) {
         }
           });
         }
+            //cerrar
+
+            const btncerrar = document.getElementById('cerrar');
+
+                if(cerrar){
+                    cerrar.addEventListener( 'click', () => {
+
+                        window.location.href = 'login.html';
+
+                    });
+
+                }
+
+
+                //likes index
+
+           // busca todos los <i> con clase likes
+const like = document.querySelectorAll('.likes')
+
+like.forEach(Btnlike => {
+    let spanCont = Btnlike.nextElementSibling; 
+    let contar = parseInt(spanCont.textContent); 
+    let liked = false
+
+    Btnlike.addEventListener('click', () => {
+        Btnlike.classList.toggle('fa-thumbs-down');
+        Btnlike.classList.toggle('fa-thumbs-up');
+        
+        if(liked){
+            contar++;
+            liked = false;
+        } else{
+            contar--;
+            liked = true
+        }
+
+        spanCont.textContent = contar;
+         
+    });
+});
+
+         
+
+            
+
+
+
+
+
 
                           // Popovers
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
