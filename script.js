@@ -1,8 +1,6 @@
-// ══════════════════════════════════════════
-//  PULSOSCENA — SCRIPT.JS
-// ══════════════════════════════════════════
 
-// ── LOGIN ─────────────────────────────────
+
+// ─Login
 const btnLogin = document.getElementById('btn-login');
 if (btnLogin) {
     btnLogin.addEventListener('click', () => {
@@ -33,7 +31,7 @@ if (btnLogin) {
 }
 
 
-// ── CERRAR SESIÓN ─────────────────────────
+// ─ Cerrar sesion
 const btncerrar = document.getElementById('cerrar');
 if (btncerrar) {
     btncerrar.addEventListener('click', () => {
@@ -42,14 +40,14 @@ if (btncerrar) {
 }
 
 
-// ── POPOVERS ──────────────────────────────
+// ─Popovers
 const popoverList = document.querySelectorAll('[data-bs-toggle="popover"]');
 if (popoverList.length > 0) {
     popoverList.forEach(el => new bootstrap.Popover(el));
 }
 
 
-// ── LIKES ─────────────────────────────────
+// ─Likes
 const likes1 = document.querySelectorAll('.likes1');
 
 if (likes1.length > 0) {
@@ -66,7 +64,7 @@ if (likes1.length > 0) {
 
             if (!activo) {
 
-                // DAR LIKE
+                // Dar like
                 contador++;
                 activo = true;
 
@@ -76,7 +74,7 @@ if (likes1.length > 0) {
 
             } else {
 
-                // QUITAR LIKE
+                // Quitar like
                 contador--;
                 activo = false;
 
@@ -95,7 +93,7 @@ if (likes1.length > 0) {
 }
 
 
-// ── COMENTARIOS ───────────────────────────
+// ─Comentarios
 const seccionesComentarios = document.querySelectorAll('.comentarios-seccion');
 if (seccionesComentarios.length > 0) {
     seccionesComentarios.forEach(seccion => {
@@ -110,9 +108,11 @@ if (seccionesComentarios.length > 0) {
             const item    = document.createElement('div');
             item.classList.add('comentario');
 
-            const avatar  = document.createElement('div');
+            const avatar  = document.createElement('img');
+            avatar.src = 'assets/per.jpg';
+            avatar.alt = 'camilo';
             avatar.classList.add('comentario-avatar');
-            avatar.textContent = 'TU';
+            
 
             const burbuja = document.createElement('div');
             burbuja.classList.add('comentario-burbuja');
@@ -131,7 +131,7 @@ if (seccionesComentarios.length > 0) {
 }
 
 
-// ── EXPANDIR IMAGEN AL VER MÁS ────────────
+// ─Expandir imagen ver mas
 const detalles = document.querySelectorAll('[id^="detalle-"]');
 if (detalles.length > 0) {
     detalles.forEach(detalle => {
@@ -154,7 +154,7 @@ if (detalles.length > 0) {
 }
 
 
-// ── STORIES FLECHAS ───────────────────────
+// ─Stories flechas
 const storiesScroll = document.getElementById('storiesScroll');
 const arrowLeft     = document.getElementById('arrowLeft');
 const arrowRight    = document.getElementById('arrowRight');
@@ -164,7 +164,7 @@ if (arrowLeft && arrowRight && storiesScroll) {
 }
 
 
-// ── EDITAR PERFIL ─────────────────────────
+// ─Editar perfil
 const btnGuardarPerfil = document.getElementById('btn-guardar-perfil');
 if (btnGuardarPerfil) {
     btnGuardarPerfil.addEventListener('click', function () {
@@ -195,7 +195,7 @@ if (btnGuardarPerfil) {
 }
 
 
-// ── PUBLICAR EVENTO ───────────────────────
+// ─Publicar evento 
 const btnPublicarEvento = document.getElementById('btn-publicar-evento');
 if (btnPublicarEvento) {
     btnPublicarEvento.addEventListener('click', function () {
@@ -288,7 +288,7 @@ function agregarCard(imgSrc, nombre, ciudad, fecha, descripcion) {
         });
     });
 
-    // comentarios del nuevo card
+    //-comentarios del nuevo card
     col.querySelectorAll('.comentarios-seccion').forEach(seccion => {
         const input       = seccion.querySelector('.campo-comentario');
         const btnComentar = seccion.querySelector('.btn-comentar');
@@ -301,9 +301,11 @@ function agregarCard(imgSrc, nombre, ciudad, fecha, descripcion) {
             const item    = document.createElement('div');
             item.classList.add('comentario');
 
-            const avatar  = document.createElement('div');
+            const avatar  = document.createElement('img');
+            avatar.src = 'assets/per.jpg';
+            avatar.alt = 'camilo';
             avatar.classList.add('comentario-avatar');
-            avatar.textContent = 'TU';
+            
 
             const burbuja = document.createElement('div');
             burbuja.classList.add('comentario-burbuja');
