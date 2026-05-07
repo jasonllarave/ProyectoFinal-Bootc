@@ -5,244 +5,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>PulsoScena - Inicio</title>
 </head>
 <body>
 
-    <!-- Navbar con hamburguesa -->
-    <nav class="navbar navbar-expand-lg" id="navbar-principal">
-        <div class="container-fluid px-4">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-    <img src="assets/logo.png" class="logo-navbar" alt="logo">
-</a>
-            <button class="navbar-toggler " type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#menuNav">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menuNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publicaciones.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="perfil.html">Mi Perfil</a>
-                    </li>
-                     <li class="nav-item " style="margin-left: 10px;">
-                        <a class="nav-link"  id="cerrar" >salir</a>
-                    </li>
-                </ul>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top" id="navbar-principal">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/logo.png" class="logo-navbar" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicaciones.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="perfil.html">Mi Perfil</a></li>
+                <li class="nav-item" style="margin-left:10px;">
+                    <a class="nav-link" id="cerrar" href="#">Salir</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero container my-4">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2 class="text-start mb-3">Descubrí lo que pasa cerca de ti</h2>
+            <p class="text-start mb-4">Explorá conciertos, obras de teatro, exposiciones y más</p>
+            <a href="publicaciones.html" class="btn btn-danger rounded-pill px-4">Explorar eventos</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="max-width:400px;width:100%;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="assets/evento.jpg" class="d-block w-100" alt="evento">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Eventos imperdibles</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/evento2.jpg" class="d-block w-100" alt="evento">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Explorá tu ciudad</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/evento1.jpg" class="d-block w-100" alt="evento">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Exposiciones únicas</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </div>
-    </nav>
-
- <!-- Hero seccion -->
-<section class="hero container my-5">
-  <div class="row align-items-center">
-    <!-- Columna izquierda: título y texto -->
-    <div class="col-md-6">
-      <h2 class="text-start mb-3">Descubrí lo que pasa cerca de ti</h2>
-      <p class="text-start mb-4">Explorá conciertos, obras de teatro, exposiciones y más</p>
     </div>
-
-    <!-- Columna derecha: carrusel -->
-    <div class="col-md-6 d-flex justify-content-center">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="max-width: 400px;">
-        
-        <!-- Indicadores -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-  <div class="carousel-item active" data-bs-interval="2000">
-    <img src="assets/evento.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <p>Eventos imperdibles</p>
-    </div>
-  </div>
-  <div class="carousel-item" data-bs-interval="2000">
-    <img src="assets/evento2.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <p>Explora tu ciudad</p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="assets/evento1.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <p class="mb-4 blockquote-foote">Exposiciones únicas</p>
-    </div>
-  </div>
-</div>
-
-
-        <!-- Controles -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </div>
 </section>
 
-         <!-- Historias Destacadas -->
- <h1 class="text-center mb-3">Tu comunidad</h1>
-   <div class="stories-container">
-
-   
-
-    <button class="story-arrow story-arrow-left" id="arrowLeft">&#8249;</button>
-
-    <div class="stories-scroll" id="storiesScroll">
-
-        <div class="story-card" style="background-image: url('assets/eventos/1.jpg'); background-size: cover; background-position: center;">
-            <img src="assets/perfiles/2.jpg" class="story-avatar" alt="usuario">
-            <div class="story-info">
-                <p class="story-nombre">María García</p>
-                <p class="story-evento"> Jazz en el Parque</p>
+<!-- STORIES -->
+<div class="stories-wrapper">
+    <p class="stories-titulo">Tu comunidad</p>
+    <div class="stories-container">
+        <button class="story-arrow story-arrow-left" id="arrowLeft">&#8249;</button>
+        <div class="stories-scroll" id="storiesScroll">
+            <div class="story-card" style="background-image:url('assets/eventos/1.png');background-size:cover;background-position:center">
+                <img src="assets/perfiles/2.jpg" class="story-avatar" alt="María García">
+                <div class="story-info"><p class="story-nombre">María García</p><p class="story-evento">Jazz en el Parque</p></div>
+            </div>
+            <div class="story-card" style="background-image:url('assets/eventos/2.png');background-size:cover;background-position:center">
+                <img src="assets/perfiles/1.jpg" class="story-avatar" alt="Carlos Ruiz">
+                <div class="story-info"><p class="story-nombre">Carlos Ruiz</p><p class="story-evento">Arte Moderno</p></div>
+            </div>
+            <div class="story-card" style="background-image:url('assets/eventos/3.png');background-size:cover;background-position:center">
+                <img src="assets/perfiles/3.jpeg" class="story-avatar" alt="Laura Pérez">
+                <div class="story-info"><p class="story-nombre">Laura Pérez</p><p class="story-evento">Festival Teatro</p></div>
+            </div>
+            <div class="story-card" style="background-image:url('assets/eventos/4.png');background-size:cover;background-position:center">
+                <img src="assets/perfiles/4.avif" class="story-avatar" alt="Pedro López">
+                <div class="story-info"><p class="story-nombre">Pedro López</p><p class="story-evento">Música Electrónica</p></div>
+            </div>
+            <div class="story-card" style="background-image:url('assets/eventos/5.jpg');background-size:cover;background-position:center">
+                <img src="assets/perfiles/5.jpg" class="story-avatar" alt="Ana Torres">
+                <div class="story-info"><p class="story-nombre">Ana Torres</p><p class="story-evento">Exposición Arte</p></div>
+            </div>
+            <div class="story-card" style="background-image:url('assets/eventos/6.png');background-size:cover;background-position:center">
+                <img src="assets/perfiles/6.jpg" class="story-avatar" alt="Estella Mora">
+                <div class="story-info"><p class="story-nombre">Estella Mora</p><p class="story-evento">Rock Festival</p></div>
+            </div>
+            <div class="story-card" style="background-image:url('assets/eventos/7.png');background-size:cover;background-position:center">
+                <img src="assets/perfiles/7.avif" class="story-avatar" alt="Robert Reyes">
+                <div class="story-info"><p class="story-nombre">Robert Reyes</p><p class="story-evento">Cine al Aire</p></div>
+            </div>
+            <div class="story-card" style="background-image:url('assets/eventos/8.jpg');background-size:cover;background-position:center">
+                <img src="assets/perfiles/8.avif" class="story-avatar" alt="Dakota Vay">
+                <div class="story-info"><p class="story-nombre">Dakota Vay</p><p class="story-evento">Museo Noche</p></div>
             </div>
         </div>
+        <button class="story-arrow story-arrow-right" id="arrowRight">&#8250;</button>
+    </div>
+</div>
 
-        <div class="story-card" style="background-image: url('assets/eventos/2.jpg'); background-size: cover; background-position: center;">
-            <img src="assets/perfiles/1.jpg" class="story-avatar" alt="usuario">
-            <div class="story-info">
-                <p class="story-nombre">Carlos Ruiz</p>
-                <p class="story-evento"> Arte Moderno</p>
-            </div>
+<!-- FEED ESTILO RED SOCIAL -->
+<main class="container py-4">
+    <h3 class="text-center mb-4 fw-bold">Eventos recientes</h3>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- POST 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="post-card">
+                <div class="post-header">
+                    <img src="assets/perfiles/2.jpg" class="Fperfil" alt="María García">
+                    <div class="post-header-info">
+                        <p class="nombre">María García</p>
+                        <p class="tiempo">hace 2 sem</p>
+                    </div>
+                </div>
+                <img src="assets/eventos/1.png" class="post-img" alt="Exposición Arte">
+                <div class="post-texto">
+                    La mosca en concierto
+                </div>
+                <p class="px-3 text-muted" style="font-size:0.85rem;">Bogotá | 30 Abril 2026</p>
+                <p class="px-3" style="font-size:0.85rem;">la banda que puso a bailar a toda una generacion llega a bogota con todos sus clasicos y la mejor energia</p>
+                <hr class="separador">
+                <div class="post-acciones">
+                    <button class="likes1 fa fa-thumbs-up">&nbsp;<span class="num-likes">87</span></button>
+                    <a href="publicaciones.html" class="btn-ver-comentarios">
+                        <i class="fa fa-eye"></i> Ver evento
+                    </a>
+                </div>
+            </article>
         </div>
 
-        <div class="story-card" style="background-image: url('assets/eventos/3.jpg'); background-size: cover; background-position: center;">
-            <img src="assets/perfiles/3.jpeg" class="story-avatar" alt="usuario">
-            <div class="story-info">
-                <p class="story-nombre">Laura Pérez</p>
-                <p class="story-evento"> Festival Teatro</p>
-            </div>
+        <!-- POST 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="post-card">
+                <div class="post-header">
+                    <img src="assets/perfiles/6.jpg" class="Fperfil" alt="Estella Mora">
+                    <div class="post-header-info">
+                        <p class="nombre">Estella Mora</p>
+                        <p class="tiempo">hace 20 min</p>
+                    </div>
+                </div>
+                <img src="assets/eventos/6.png" class="post-img" alt="Arte Moderno">
+                <div class="post-texto">
+                     ¡Festival Rock al Parque!
+                </div>
+                <p class="px-3 text-muted" style="font-size:0.85rem;">Bogotá | Junio | Julio 2026</p>
+                <p class="px-3" style="font-size:0.85rem;">festival más grande de música gratuita en Latinoamérica regresa con toda su fuerza.</p>
+                <hr class="separador">
+                <div class="post-acciones">
+                    <button class="likes1 fa fa-thumbs-up">&nbsp;<span class="num-likes">120</span></button>
+                    <a href="publicaciones.html" class="btn-ver-comentarios">
+                        <i class="fa fa-eye"></i> Ver evento
+                    </a>
+                </div>
+            </article>
         </div>
 
-        <div class="story-card" style="background-image: url('assets/eventos/4.jpg'); background-size: cover; background-position: center;">
-            <img src="assets/perfiles/4.avif" class="story-avatar" alt="usuario">
-            <div class="story-info">
-                <p class="story-nombre">Pedro López</p>
-                <p class="story-evento"> Música Electrónica</p>
-            </div>
-        </div>
-
-        <div class="story-card" style="background-image: url('assets/eventos/5.jpg'); background-size: cover; background-position: center;">
-            <img src="assets/perfiles/5.jpg" class="story-avatar" alt="usuario">
-            <div class="story-info">
-                <p class="story-nombre">Ana Torres</p>
-                <p class="story-evento"> Exposición Arte</p>
-            </div>
-        </div>
-
-        <div class="story-card" style="background-image: url('assets/eventos/6.png'); background-size: cover; background-position: center;">
-            <img src="assets/perfiles/6.jpg" class="story-avatar" alt="usuario">
-            <div class="story-info">
-                <p class="story-nombre">Estella Mora</p>
-                <p class="story-evento"> Rock Festival</p>
-            </div>
-        </div>
-
-        <div class="story-card" style="background-image: url('assets/eventos/7.png'); background-size: cover; background-position: center;">
-            <img src="assets/perfiles/7.avif" class="story-avatar" alt="usuario">
-            <div class="story-info">
-                <p class="story-nombre">Robert Reyes</p>
-                <p class="story-evento"> Cine al Aire</p>
-            </div>
-        </div>
-
-        <div class="story-card" style="background-image: url('assets/eventos/8.jpg'); background-size: cover; background-position: center;">
-            <img src="assets/perfiles/8.avif" class="story-avatar" alt="usuario">
-            <div class="story-info">
-                <p class="story-nombre">Dakota Vay</p>
-                <p class="story-evento"> Museo Noche</p>
-            </div>
+        <!-- POST 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="post-card">
+                <div class="post-header">
+                    <img src="assets/perfiles/3.jpeg" class="Fperfil" alt="Laura Pérez">
+                    <div class="post-header-info">
+                        <p class="nombre">Laura Pérez</p>
+                        <p class="tiempo">hace 1 hora</p>
+                    </div>
+                </div>
+                <img src="assets/eventos/3.png" class="post-img" alt="Festival Teatro">
+                <div class="post-texto">
+                    Festival de Teatro
+                </div>
+                <p class="px-3 text-muted" style="font-size:0.85rem;">Bogotá  | 25 Abril 2026</p>
+                <p class="px-3" style="font-size:0.85rem;">Una experiencia donde el juego, la imaginación y la creatividad se encuentran en un solo escenario.</p>
+                <hr class="separador">
+                <div class="post-acciones">
+                    <button class="likes1 fa fa-thumbs-up">&nbsp;<span class="num-likes">64</span></button>
+                    <a href="publicaciones.html" class="btn-ver-comentarios">
+                        <i class="fa fa-eye"></i> Ver evento
+                    </a>
+                </div>
+            </article>
         </div>
 
     </div>
 
-    <button class="story-arrow story-arrow-right" id="arrowRight">&#8250;</button>
+    <!-- PAGINACION -->
+    <nav class="mt-5 mb-2">
+        <ul class="pagination pagination-sm justify-content-center">
+            <li class="page-item disabled"><a class="page-link">Anterior</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+        </ul>
+    </nav>
 
-</div>
+</main>
 
+<footer>
+    <p>© 2026 PulsoScena — Todos los derechos reservados</p>
+</footer>
 
-
-
-    <!-- Feed de eventos -->
-     
-    <main>
-        <h3 class="text-center">Eventos recientes</h3>
-
-        <div class="eventos-grid"> 
-            <article>
-                <img src="assets/arte.jpeg" alt="Concierto Jazz">
-                <h4>Exposición Colectiva: Voces del Color</h4>
-                <p> Bogotá | 30 Abril 2026</p>
-                <p> Una muestra colectiva de 12 artistas emergentes que exploran 
-                la identidad y el color como lenguaje universal.</p>
-                <a href="publicaciones.html">Ver más</a>
-                <i class="likes fa fa-thumbs-up"></i>
-                <span class="contadorLik">30</span>
-                
-            </article>
-
-            <article>
-                <img src="assets/vivo.jpg" alt="Exposición Arte">
-                <h4>Exposición de Arte Moderno</h4>
-                <p> Medellín |  2 Mayo 2026</p>
-                <p>Arte contemporáneo de artistas locales.</p>
-                <a href="publicaciones.html">Ver más</a>
-                <i class=" likes fa fa-thumbs-up"></i>
-                <span class="contadorLik">50</span>
-            </article>
-
-            <article>
-                <img src="assets/teatro.jpg" alt="Festival Teatro">
-                <h4>Festival de Teatro</h4>
-                <p> Cali |  5 Mayo 2026</p>
-                <p>Las mejores obras de teatro del año.</p>
-                <a href="publicaciones.html">Ver más</a>
-                <i class=" likes fa fa-thumbs-up"></i>
-                <span class="contadorLik">88</span>
-            </article>
-
-        </div>
-
-        
-    </main>
-
-    <div >
-  <ul class="pagination pagination-sm justify-content-center ">
-    <li class="page-item disabled mb-5 ">
-      <a class="page-link text-primary-emphasis">Anterior</a>
-    </li>
-    <li class="page-item "><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link text-primary-emphasis" href="#">Siguiente</a>
-    </li>
-  </ul>
-  </div>
-
-    <footer>
-        <p>© 2026 PulsoScena — Todos los derechos reservados</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
